@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en" id="top">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About + Contact — Julius Messerschmidt</title>
+  <meta name="description" content="About Julius and a contact form for consulting inquiries." />
+  <link rel="stylesheet" href="../Styles/styles.css" />
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="container">
+    <nav class="nav" aria-label="Primary">
+      <a class="brand" href="../index.html">
+        <span class="brand__mark" aria-hidden="true"></span>
+        <span class="brand__name">Julius Messerschmidt</span>
+        <span class="brand__tag">Independent Strategy Consultant</span>
+      </a>
+
+      <div class="nav__links">
+        <a href="../index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="about-contact.html" aria-current="page">About + Contact</a>
+        <button class="btn btn--ghost" type="button" data-sound-toggle aria-pressed="true">Sound: On</button>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <div class="container">
+    <section class="hero" aria-label="About intro">
+      <div>
+        <div class="kicker">About</div>
+        <h1>Strategy consultant with a creator background.</h1>
+        <p class="lead">
+          I combine structured strategy thinking with a real understanding of attention, taste, and consumer behavior
+          because I’ve built in that world myself.
+        </p>
+
+        <div class="inline-actions">
+          <a class="btn btn--primary" href="#contact">Contact</a>
+          <a class="btn" href="#proof">Proof</a>
+          <a class="btn btn--ghost" href="../index.html">Back home</a>
+        </div>
+      </div>
+
+      <div class="hero__media card">
+        <div class="card__pad">
+          <img
+            src="../media/img/headshot.png"
+            srcset="../media/img/headshot.png, ../media/img/headshot2x.png 2x"
+            width="800"
+            height="520"
+            alt="Me!"
+            loading="lazy"
+          />
+     
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="proof">
+      <h2>Credibility</h2>
+
+      <div class="grid-2">
+        <div class="card">
+          <div class="card__pad">
+            <h3>Business & Creator Work</h3>
+            <ul>
+              <li>Built a fashion YouTube channel to 30K+ subscribers and 5M+ views.</li>
+              <li>Creator-led business to €60K+ annual revenue at with ~400% CAGR.</li>
+              <li>Advised and consulted fashion brands on SoMe strategy, helping them scale.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card__pad">
+            <h3>Academic signal</h3>
+            <ul>
+              <li>Copenhagen Business School: GPA 11.3/12 (Top 3%).</li>
+              <li>Currently on exchange at NYU Stern (Fall 2025).</li>
+              <li>Strategy Consulting Experience at Bain</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <h2>Contact</h2>
+      <p>If you prefer email: <a href="mailto:messerschmidtjulius@gmail.com">messerschmidtjulius@gmail.com</a>.</p>
+
+      <div class="grid-2">
+        <div class="card">
+          <div class="card__pad">
+            <h3>Send an inquiry</h3>
+
+            <div class="form-status" id="formStatus" aria-live="polite">
+              Fill out the form and hit submit to let me know what you're currently working on.
+            </div>
+
+            <form id="contactForm" novalidate>
+              <div>
+                <label for="name">Name</label>
+                <input id="name" name="name" type="text" autocomplete="name" required />
+                <div class="field-hint">Who am I talking to?</div>
+              </div>
+
+              <div>
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" autocomplete="email" required />
+                <div class="field-hint">So I can reply without telepathy.</div>
+              </div>
+
+              <div>
+                <label for="topic">What do you need?</label>
+                <select id="topic" name="topic">
+                  <option value="audit">Audit / Diagnosis</option>
+                  <option value="growth">Revenue Growth</option>
+                  <option value="margins">Margins / Pricing</option>
+                  <option value="retention">Retention / LTV</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+
+              <div>
+                <label for="message">Message</label>
+                <textarea id="message" name="message" required></textarea>
+                <div class="field-hint">Share: brand, channel mix, goal, and what’s currently not working.</div>
+              </div>
+
+              <button class="btn" type="submit">Submit</button>
+            </form>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card__pad">
+            <h3>What happens next</h3>
+            <p>After you reach out, I’ll answer with:</p>
+            <ul>
+              <li>The likely bottleneck (and what data would confirm it)</li>
+              <li>A recommended package or a custom scope</li>
+              <li>A timeline and a clear definition of “success”</li>
+            </ul>
+
+            <div class="cta-band" style="margin-top:14px;">
+              <div>
+                <strong>Small brands welcome.</strong>
+                <p>If you’re early-stage, we’ll keep it focused. No corporate cosplay.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <audio id="uiBeep" preload="auto" data-muted="false">
+      <source src="../media/audio/ui-click.mp3" type="audio/mp3" />
+      Your browser does not support the audio element.
+    </audio>
+
+<audio id="navClick" preload="auto" data-muted="false">
+  <source src="../media/audio/nav-click.mp3" type="audio/mp3" />
+  Your browser does not support the audio element.
+</audio>
+
+
+
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__row">
+      <div>
+        <span class="badge">© <span data-year></span> Julius Messerschmidt</span>
+        <span class="badge">Brand Strategy</span>
+      </div>
+      <div>
+        <a href="#top">Back to top</a> ·
+        <a href="mailto:messerschmidtjulius@gmail.com">messerschmidtjulius@gmail.com</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="../JS/main.js" defer></script>
+</body>
+</html>
